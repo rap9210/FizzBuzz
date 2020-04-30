@@ -17,21 +17,21 @@ public class FizzBuzz {
         int i;
         for (i=0; i<=99; i++)
         {
-           if ((i%3 == 0)&&(i%5 == 0))          // Double condition first to avoid repetition.
+           if (((i+1)%3 == 0)&&((i+1)%5 == 0))          // Double condition first to avoid repetition.
            {
                one_to_100[i] = "FizzBuzz";
            }
-           else if(i%3 == 0)
+           else if((i+1)%3 == 0)
            {
                one_to_100[i] = "Fizz";
            }
-           else if(i%5 == 0)
+           else if((i+1)%5 == 0)
            {
                one_to_100[i] = "Buzz";
            }
            else
            {
-               one_to_100[i] = Integer.toString(i);
+               one_to_100[i] = Integer.toString(i+1);
            }
         }
         /*
